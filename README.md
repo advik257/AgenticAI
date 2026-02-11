@@ -7,3 +7,8 @@ step 4: uv python list
 step 5 : choose python version
 step 6:uv venv venv --python cpython-3.13.12-windows-x86_64-none 
 Step 7: activate venv
+
+Install interpreter - ipykernel
+=====================================
+in order to run ipynb file , need interpreter
+uv add -r requirements.txt
