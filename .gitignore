@@ -12,3 +12,6 @@ venv/
 env/
 .env
 .env*
+*.env
+config.json
+secrets/

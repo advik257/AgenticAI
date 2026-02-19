@@ -15,3 +15,5 @@ wikipedia
 langchain-tavily
 yfinance
 ddgs
+faiss-cpu
+rank_bm25
