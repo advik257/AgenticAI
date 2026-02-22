@@ -15,3 +15,33 @@ env/
 *.env
 config.json
 secrets/
+logs
+*logs/
+
+# Logs
+logs/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env/
+
+# Environment variables
+.env
+.env.*
+
+# Build files
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -17,3 +17,4 @@ yfinance
 ddgs
 faiss-cpu
 rank_bm25
+structlog
