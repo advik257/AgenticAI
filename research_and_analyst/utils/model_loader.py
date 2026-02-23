@@ -75,7 +75,7 @@ class ModelLoader:
             CohereEmbeddings: Loaded embedding model instance.
         """
         try:
-            model_name = self.config["embedding_model"]["model_name"]
+            model_name = self.config["embedding_model"]["model"]
             log.info("Loading embedding model", model=model_name)
 
             # Ensure event loop exists for gRPC-based embedding API
@@ -167,16 +167,16 @@ if __name__ == "__main__":
         loader = ModelLoader()
 
         # # Test embedding model
-        # embeddings = loader.load_embeddings()
-        # print(f"Embedding Model Loaded: {embeddings}")
-        # result = embeddings.embed_query("Hello, how are you?")
-        # print(f"Embedding Result: {result[:5]} ...")
+        embeddings = loader.load_embeddings()
+        print(f"Embedding Model Loaded: {embeddings}")
+        result = embeddings.embed_query("Hello, how are you?")
+        print(f"Embedding Result: {result[:5]} ...")
 
         # Test LLM
-        llm = loader.load_llm()
-        print(f"LLM Loaded: {llm}")
-        result = llm.invoke("Hello, how are you?")
-        print(f"LLM Result: {result.content[:200]}")
+        # llm = loader.load_llm()
+        # print(f"LLM Loaded: {llm}")
+        # result = llm.invoke("Hello, how are you?")
+        # print(f"LLM Result: {result.content[:200]}")
 
         log.info("ModelLoader test completed successfully")
 
