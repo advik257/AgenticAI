@@ -76,11 +76,11 @@ if __name__ == "__main__":
     # ├── SystemExit
     # ├── KeyboardInterrupt
 
-# validation error tha?
-# config missing tha?
-# LLM API down tha?
-# embedding fail hua?
-# vector DB fail hua?
+# validation error?
+# config missing?
+# LLM API down?
+# embedding fail?
+# vector DB fail?
 
 # 👉 Matlab: unexpected / unhandled errors ko wrap karke clean error banana.
 
